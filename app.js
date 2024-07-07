@@ -1,1 +1,6 @@
-console.log('Hello World'[10])
+let number = 1;
+
+while (number <= 100) {
+    console.log(number);
+number = number + 1;
+}
