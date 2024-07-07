@@ -1,6 +1,17 @@
-let number = 1;
+function getSubscriptionStatus() {
 
-while (number <= 100) {
-    console.log(number);
-number = number + 1;
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve("VIP")}, 2000);
+    
+       
+    })
 }
+
+getSubscriptionStatus().then(response => console.log(response))
+async function main (){
+console.log(getSubscriptionStatus())
+
+}
+
+main();
